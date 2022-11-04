@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" parallel="tests" name="Test1(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="testpack.Testclass">
+        <methods>
+          <include name="test1"/>
+          <include name="afterMethod"/>
+          <include name="beforemethod"/>
+          <include name="closetab"/>
+          <include name="test5"/>
+          <include name="test3"/>
+          <include name="test4"/>
+          <include name="aftertest"/>
+          <include name="test2"/>
+          <include name="openbrowser"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- testpack.Testclass -->
+    </classes>
+  </test> <!-- Test1(failed) -->
+  <test thread-count="5" parallel="tests" name="Test2(failed)">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="testpack.Testclass">
+        <methods>
+          <include name="test1"/>
+          <include name="afterMethod"/>
+          <include name="beforemethod"/>
+          <include name="closetab"/>
+          <include name="test5"/>
+          <include name="test3"/>
+          <include name="test4"/>
+          <include name="aftertest"/>
+          <include name="test2"/>
+          <include name="openbrowser"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- testpack.Testclass -->
+      <class name="Fliptest.Fliptest1">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="openbrowser"/>
+          <include name="test4"/>
+          <include name="aftertest"/>
+          <include name="test3"/>
+          <include name="test2"/>
+          <include name="beforemethod"/>
+          <include name="closetab"/>
+          <include name="test5"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- Fliptest.Fliptest1 -->
+    </classes>
+  </test> <!-- Test2(failed) -->
+</suite> <!-- Failed suite [Suite] -->
